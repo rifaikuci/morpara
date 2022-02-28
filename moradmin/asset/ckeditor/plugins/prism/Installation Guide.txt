@@ -41,7 +41,7 @@ II. STANDARD INSTALLATION (Usual Setup)
 
 3.) Just to make sure, clear the web browser's cache after modifying your configuration.
     Clearing the browser's cache is also very important
-    since the CKEditor's JS and CSS assets/components are cached also in the browser.
+    since the CKEditor's JS and CSS <?php echo base_url_front(); ?>assets/components are cached also in the browser.
 
 
 III. DRUPAL INSTALLATION
@@ -123,7 +123,7 @@ A. DRUPAL INSTALLATION OPTION 1 (Easier Setup Than Option 2)
 
     3.) Then, click the Save button. Clear the Drupal's overall cache AND
         clear the browser's cache. Clearing the browser's cache is also
-        very important since the CKEditor's JS and CSS assets/components
+        very important since the CKEditor's JS and CSS <?php echo base_url_front(); ?>assets/components
         are cached also in the browser.
 
     As indicated above, using the "sites/all/modules/ckeditor/plugins" or
@@ -206,7 +206,7 @@ B. DRUPAL INSTALLATION OPTION 2
 
     4.) Then, click the Save button. Clear the Drupal's overall cache AND
         clear the browser's cache. Clearing the browser's cache is also
-        very important since the CKEditor's JS and CSS assets/components
+        very important since the CKEditor's JS and CSS <?php echo base_url_front(); ?>assets/components
         are cached also in the browser.
 
 
