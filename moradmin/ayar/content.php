@@ -60,15 +60,6 @@ if ($_GET['durumekle'] == "ok") {
 
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Ayarlar Link (Read More için)</label>
-                        <input type="text" class="form-control form-control-lg" name="link"
-                               value="<?php echo $row['link'] ?>"
-                               placeholder="Link Giriniz...">
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
                         <label>Açıklama Giriniz</label>
                         <textarea type="text" class="form-control form-control-lg" name="description" id="editor1"
                                   placeholder="Açıklama"><?php echo $row['description'] ?></textarea>
@@ -188,15 +179,6 @@ if ($_GET['durumekle'] == "ok") {
                         <input type="text" class="form-control form-control-lg" name="subTitleE"
                                value="<?php echo $row['subTitleE'] ?>"
                                placeholder="Ayarlar Alt Başlık Giriniz...">
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Ayarlar Link (Read More için)</label>
-                        <input type="text" class="form-control form-control-lg" name="linkE"
-                               value="<?php echo $row['linkE'] ?>"
-                               placeholder="Link Giriniz...">
                     </div>
                 </div>
 

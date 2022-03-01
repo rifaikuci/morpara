@@ -51,15 +51,6 @@ if ($_GET['durumekle'] == "ok") {
 
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Buton Link </label>
-                        <input type="text" class="form-control form-control-lg" name="link"
-                               value="<?php echo $row['link'] ?>"
-                               placeholder="Link Giriniz...">
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
                         <label>Açıklama Giriniz</label>
                         <textarea type="text" class="form-control form-control-lg" name="description" id="editor1"
                                   placeholder="Açıklama"><?php echo $row['description'] ?></textarea>

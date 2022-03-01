@@ -6,8 +6,6 @@ if (isset($_POST['solutionekleme'])) {
 
     $title = $_POST['title'];
     $titleE = $_POST['titleE'] != "" ? $_POST['titleE'] : $_POST['title'];
-    $detailTitle = $_POST['detailTitle'];
-    $detailTitleE = $_POST['detailTitleE'] != "" ? $_POST['detailTitleE'] : $_POST['detailTitle'];
     $subTitle = $_POST['subTitle'];
     $subTitleE = $_POST['subTitleE'] != "" ? $_POST['subTitleE'] : $_POST['subTitle'];
     $class = $_POST['class'];
@@ -19,18 +17,8 @@ if (isset($_POST['solutionekleme'])) {
     $keywordsE = $_POST['keywordsE'] != "" ? $_POST['keywordsE'] : $_POST['keywords'];
     $seoTitle = seo($title);
     $seoTitleE = seo($titleE);
-    $skill = $_POST['skill'];
-    $skillE = $_POST['skillE'] != "" ? $_POST['skillE'] : $_POST['skill'];
-    $modul = $_POST['modul'];
-    $modulE = $_POST['modulE'] != "" ? $_POST['modulE'] : $_POST['modul'];
-    $features = $_POST['features'];
-    $featuresE = $_POST['featuresE'] != "" ? $_POST['featuresE'] : $_POST['features'];
-    $infrastructure = $_POST['infrastructure'];
-    $infrastructureE = $_POST['infrastructureE'] != "" ? $_POST['infrastructureE'] : $_POST['infrastructure'];
-    $competence = $_POST['competence'];
-    $competenceE = $_POST['competenceE'] != "" ? $_POST['competenceE'] : $_POST['competence'];
-    $link = base_url_front()."solution-detail/?modul=".$seoTitle;
-    $linkE = base_url_front()."solution-detail/?modul=".$seoTitleE;
+    $link = "#"; //base_url_front()."solution-detail/?modul=".$seoTitle;
+    $linkE = "#"; //base_url_front()."solution-detail/?modul=".$seoTitleE;
 
     if ($_FILES['img']['size'] > 0) {
 
@@ -39,25 +27,21 @@ if (isset($_POST['solutionekleme'])) {
         $sql = "INSERT INTO tblsolution (title , titleE, subTitle, subTitleE, class, 
                                         description, descriptionE, keywords, keywordsE, 
                                         metaDescription, metaDescriptionE, seoTitle, link, linkE, 
-                                        seoTitleE, skill, skillE, competence, competenceE, detailTitle, detailTitleE,
-                                        modul, modulE, features, featuresE, infrastructure, infrastructureE,img) 
+                                        seoTitleE, img) 
                         VALUES ('$title', '$titleE', '$subTitle', '$subTitleE', '$class',
                                 '$description', '$descriptionE', '$keywords', '$keywordsE',
                                 '$metaDescription', '$metaDescriptionE', '$seoTitle', '$link', '$linkE', 
-                                '$seoTitleE', '$skill', '$skillE', '$competence', '$competenceE', '$detailTitle', '$detailTitleE',
-                                '$modul', '$modulE', '$features', '$featuresE', '$infrastructure', '$infrastructureE', '$img')";
+                                '$seoTitleE', '$img')";
 
     } else {
         $sql = "INSERT INTO tblsolution (title , titleE, subTitle, subTitleE, class, 
                                         description, descriptionE, keywords, keywordsE, 
                                         metaDescription, metaDescriptionE, seoTitle, link, linkE, 
-                                        seoTitleE, skill, skillE, competence, competenceE, detailTitle, detailTitleE,
-                                        modul, modulE, features, featuresE) 
+                                        seoTitleE) 
                         VALUES ('$title', '$titleE', '$subTitle', '$subTitleE', '$class',
                                 '$description', '$descriptionE', '$keywords', '$keywordsE',
                                 '$metaDescription', '$metaDescriptionE', '$seoTitle', '$link', '$linkE', 
-                                '$seoTitleE', '$skill', '$skillE', '$competence', '$competenceE', '$detailTitle', '$detailTitleE',
-                                '$modul', '$modulE', '$features', '$featuresE')";
+                                '$seoTitleE')";
     }
 
     if (mysqli_query($db, $sql)) {
@@ -74,8 +58,6 @@ if (isset($_POST['solutionguncelleme'])) {
     $id = $_POST['id'];
     $title = $_POST['title'];
     $titleE = $_POST['titleE'] != "" ? $_POST['titleE'] : $_POST['title'];
-    $detailTitle = $_POST['detailTitle'];
-    $detailTitleE = $_POST['detailTitleE'] != "" ? $_POST['detailTitleE'] : $_POST['detailTitle'];
     $subTitle = $_POST['subTitle'];
     $subTitleE = $_POST['subTitleE'] != "" ? $_POST['subTitleE'] : $_POST['subTitle'];
     $class = $_POST['class'];
@@ -87,18 +69,8 @@ if (isset($_POST['solutionguncelleme'])) {
     $keywordsE = $_POST['keywordsE'] != "" ? $_POST['keywordsE'] : $_POST['keywords'];
     $seoTitle = seo($title);
     $seoTitleE = seo($titleE);
-    $skill = $_POST['skill'];
-    $skillE = $_POST['skillE'] != "" ? $_POST['skillE'] : $_POST['skill'];
-    $modul = $_POST['modul'];
-    $modulE = $_POST['modulE'] != "" ? $_POST['modulE'] : $_POST['modul'];
-    $features = $_POST['features'];
-    $featuresE = $_POST['featuresE'] != "" ? $_POST['featuresE'] : $_POST['features'];
-    $infrastructure = $_POST['infrastructure'];
-    $infrastructureE = $_POST['infrastructureE'] != "" ? $_POST['infrastructureE'] : $_POST['infrastructure'];
-    $competence = $_POST['competence'];
-    $competenceE = $_POST['competenceE'] != "" ? $_POST['competenceE'] : $_POST['competence'];
-    $link = base_url_front()."solution-detail/?modul=".$seoTitle;
-    $linkE = base_url_front()."solution-detail/?modul=".$seoTitleE;
+    $link = "#"; //base_url_front()."solution-detail/?modul=".$seoTitle;
+    $linkE = "#"; //base_url_front()."solution-detail/?modul=".$seoTitleE;
 
     if ($_FILES['img']['size'] > 0) {
         $resimbul = tablogetir("tblsolution", 'id', $id, $db)['img'];
@@ -109,8 +81,6 @@ if (isset($_POST['solutionguncelleme'])) {
         $sql = "UPDATE tblsolution set 
         title = '$title',
         titleE = '$titleE',
-        detailTitle = '$detailTitle',
-        detailTitleE = '$detailTitleE',
         subTitle = '$subTitle',
         subTitleE = '$subTitleE',
         class = '$class',
@@ -122,26 +92,14 @@ if (isset($_POST['solutionguncelleme'])) {
         metaDescriptionE = '$metaDescriptionE',
         seoTitle = '$seoTitle',
         seoTitleE = '$seoTitleE',
-        skill = '$skill',
-        skillE = '$skillE',
-        competence = '$competence',
-        competenceE = '$competenceE',
-        modul = '$modul',
-        modulE = '$modulE',
         link = '$link',
         linkE = '$linkE',
-        features = '$features',
-        featuresE = '$featuresE',
-        infrastructure = '$infrastructure',
-        infrastructureE = '$infrastructureE',
         img = '$img'  WHERE id= '$id'";
 
     } else {
         $sql = "UPDATE tblsolution set 
         title = '$title',
         titleE = '$titleE',
-        detailTitle = '$detailTitle',
-        detailTitleE = '$detailTitleE',
         subTitle = '$subTitle',
         subTitleE = '$subTitleE',
         class = '$class',
@@ -153,26 +111,16 @@ if (isset($_POST['solutionguncelleme'])) {
         metaDescriptionE = '$metaDescriptionE',
         seoTitle = '$seoTitle',
         seoTitleE = '$seoTitleE',
-        skill = '$skill',
-        skillE = '$skillE',
-        competence = '$competence',
-        competenceE = '$competenceE',
-        modul = '$modul',
-        modulE = '$modulE',
-        features = '$features',
         link = '$link',
-        linkE = '$linkE',
-        infrastructure = '$infrastructure',
-        infrastructureE = '$infrastructureE',
-        featuresE = '$featuresE' WHERE id= '$id'";
+        linkE = '$linkE' WHERE id= '$id'";
 
     }
 
     if (mysqli_query($db, $sql)) {
-        header("Location:../solution/?durumekle=ok");
+        header("Location:../solution/?durumguncelleme=ok");
         exit();
     } else {
-        header("Location:../solution/?durumekle=no");
+        header("Location:../solution/?durumguncelleme=no");
         exit();
     }
 }

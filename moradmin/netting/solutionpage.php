@@ -19,10 +19,8 @@ if (isset($_POST['solutionpageguncelleme'])) {
     $keywordsE = $_POST['keywordsE'] != "" ? $_POST['keywordsE'] : $_POST['keywords'];
     $seoTitle = seo($title);
     $seoTitleE = seo($titleE);
-    $link = $_POST['link'];
-    $linkE = $_POST['linkE'] != "" ? $_POST['linkE'] : $_POST['link'];
-    $skill = $_POST['skill'];
-    $skillE = $_POST['skillE'] != "" ? $_POST['skillE'] : $_POST['skill'];
+    $link =  "#" ; //$_POST['link'];
+    $linkE = "#"; // $_POST['linkE'] != "" ? $_POST['linkE'] : $_POST['link'];
 
     if ($_FILES['img']['size'] > 0) {
         $resimbul = tablogetir("tblsolutionpage", 'id', 1, $db)['img'];
@@ -47,8 +45,6 @@ if (isset($_POST['solutionpageguncelleme'])) {
         seoTitleE = '$seoTitleE',
         link = '$link',
         linkE = '$linkE',
-        skill = '$skill',
-        skillE = '$skillE',
         img = '$img'  WHERE id= '1'";
 
     } else {
@@ -68,9 +64,7 @@ if (isset($_POST['solutionpageguncelleme'])) {
         seoTitle = '$seoTitle',
         seoTitleE = '$seoTitleE',
         link = '$link',
-        linkE = '$linkE',
-        skill = '$skill',
-        skillE = '$skillE' WHERE id= '1'";
+        linkE = '$linkE' WHERE id= '1'";
 
     }
 

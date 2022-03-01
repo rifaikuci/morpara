@@ -7,9 +7,9 @@
                 <div class="count-box">
                     <i class="bi bi-emoji-smile"></i>
                     <div>
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="<?php echo $count['clients'] ? $count['clients'] : 0  ?>" data-purecounter-duration="1"
                                   class="purecounter"></span>
-                        <p>Happy Clients</p>
+                        <p><?php echo $lang == "tr" ? "Müşterilerimiz" : "Happy Clients"?></p>
                     </div>
                 </div>
             </div>
@@ -18,9 +18,9 @@
                 <div class="count-box">
                     <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
                     <div>
-                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="<?php echo $count['projects'] ? $count['projects'] : 0  ?>" data-purecounter-duration="1"
                                   class="purecounter"></span>
-                        <p>Projects</p>
+                        <p><?php echo $lang == "tr" ? "Projelerimiz" : "Projects"?></p>
                     </div>
                 </div>
             </div>
@@ -29,9 +29,9 @@
                 <div class="count-box">
                     <i class="bi bi-headset" style="color: #15be56;"></i>
                     <div>
-                            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="<?php echo $count['hours'] ? $count['hours'] : 0  ?>" data-purecounter-duration="1"
                                   class="purecounter"></span>
-                        <p>Hours Of Support</p>
+                        <p><?php echo $lang == "tr" ? "Destek Saatlerimiz" : "Hours Of Support"?></p>
                     </div>
                 </div>
             </div>
@@ -40,9 +40,9 @@
                 <div class="count-box">
                     <i class="bi bi-people" style="color: #bb0852;"></i>
                     <div>
-                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="<?php echo $count['workers'] ? $count['workers'] : 0 ?>" data-purecounter-duration="1"
                                   class="purecounter"></span>
-                        <p>Hard Workers</p>
+                        <p><?php echo $lang == "tr" ? "Çalışma Arkadaşlarımız" : "Hard Workers"?></p>
                     </div>
                 </div>
             </div>

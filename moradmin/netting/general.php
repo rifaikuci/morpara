@@ -15,8 +15,8 @@ if (isset($_POST['generalguncelleme'])) {
     $keywordsE = $_POST['keywordsE'] != "" ? $_POST['keywordsE'] : $_POST['keywords'];
     $seoTitle = seo($title);
     $seoTitleE = seo($titleE);
-    $link = $_POST['link'];
-    $linkE = $_POST['linkE'] != "" ? $_POST['linkE'] : $_POST['link'];
+    $link = base_url_front();
+    $linkE = base_url_front();
 
     if ($_FILES['img']['size'] > 0) {
         $resimbul = tablogetir("tblgeneral", 'id', 1, $db)['img'];

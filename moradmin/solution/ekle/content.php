@@ -27,14 +27,6 @@
 
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label>Detay Sayfası Başlık</label>
-                            <input  type="text" class="form-control form-control-lg" name="detailTitle"
-                                    placeholder="Detay Sayfası Başlık">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
                             <label>Solution Alt Açıklama</label>
                             <input  type="text" class="form-control form-control-lg" name="subTitle"
                                     placeholder="Alt Açıklama Giriniz...">
@@ -46,46 +38,6 @@
                             <label>Açıklama Giriniz</label>
                             <textarea  type="text" class="form-control form-control-lg" name="description" id="editor1"
                                        placeholder="Açıklama"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Skill (gireceğiniz Özellikler aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="skill"
-                                       placeholder="Skill giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Yetkinlik (gireceğiniz yetkinlikler aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="competence"
-                                       placeholder="Yetkinlik giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Modül (gireceğiniz Moduls aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="modul"
-                                       placeholder="Modul giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Features (gireceğiniz Features aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="features"
-                                       placeholder="Features giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Infrastructure (gireceğiniz Infrastructures aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="infrastructure"
-                                       placeholder="Infrastructures giriniz"></textarea>
                         </div>
                     </div>
 
@@ -141,14 +93,6 @@
 
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label>Detay Sayfası Başlık</label>
-                            <input  type="text" class="form-control form-control-lg" name="detailTitleE"
-                                    placeholder="Detay Sayfası Başlık">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
                             <label>Solution Alt Açıklama</label>
                             <input  type="text" class="form-control form-control-lg" name="subTitleE"
                                     placeholder="Alt Açıklama Giriniz...">
@@ -160,46 +104,6 @@
                             <label>Açıklama Giriniz</label>
                             <textarea  type="text" class="form-control form-control-lg" name="descriptionE" id="editor2"
                                        placeholder="Açıklama"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Skill (gireceğiniz Özellikler aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="skillE"
-                                       placeholder="Skill giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Yetkinlik (gireceğiniz yetkinlikler aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="competenceE"
-                                       placeholder="Yetkinlik giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Modül (gireceğiniz Moduls aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="modulE"
-                                       placeholder="Modul giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Features (gireceğiniz Features aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="featuresE"
-                                       placeholder="Features giriniz"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label>Infrastructure (gireceğiniz Infrastructures aralarında ; koyunuz)</label>
-                            <textarea  type="text" class="form-control form-control-lg" name="infrastructureE"
-                                       placeholder="Infrastructures giriniz"></textarea>
                         </div>
                     </div>
 

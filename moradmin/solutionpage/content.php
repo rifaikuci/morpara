@@ -75,14 +75,6 @@ if ($_GET['durumekle'] == "ok") {
                     </div>
                 </div>
 
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Skill (gireceğiniz yetkinlikler aralarında ; koyunuz)</label>
-                        <textarea type="text" class="form-control form-control-lg" name="skill"
-                                  placeholder="Skill giriniz"><?php echo $row['skill'] ?></textarea>
-                    </div>
-                </div>
-
                 <div class="col-sm-7">
                     <div class="form-group">
                         <label>Class Adı</label>
@@ -159,14 +151,6 @@ if ($_GET['durumekle'] == "ok") {
                         <label>Açıklama Giriniz</label>
                         <textarea type="text" class="form-control form-control-lg" name="descriptionE" id="editor2"
                                   placeholder="Açıklama"><?php echo $row['descriptionE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Skill (gireceğiniz yetkinlikler aralarında ; koyunuz)</label>
-                        <textarea type="text" class="form-control form-control-lg" name="skillE"
-                                  placeholder="Skill giriniz"><?php echo $row['skillE'] ?></textarea>
                     </div>
                 </div>
 

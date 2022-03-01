@@ -39,15 +39,6 @@ if ($_GET['id']) {
 
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Solution Detay Başlık</label>
-                        <input type="text" class="form-control form-control-lg" name="detailTitle"
-                               value="<?php echo $row['detailTitle'] ?>"
-                               placeholder="Solution Detay Başlık Giriniz...">
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
                         <label>Solution Alt Açıklama</label>
                         <input type="text" class="form-control form-control-lg" name="subTitle"
                                value="<?php echo $row['subTitle'] ?>"
@@ -60,46 +51,6 @@ if ($_GET['id']) {
                         <label>Açıklama Giriniz</label>
                         <textarea type="text" class="form-control form-control-lg" name="description" id="editor1"
                                   placeholder="Açıklama"><?php echo $row['description'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Skill (gireceğiniz Özellikler aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="skill"
-                                   placeholder="Skill giriniz"><?php echo $row['skill'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Yetkinlik (gireceğiniz yetkinlikler aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="competence"
-                                   placeholder="Yetkinlik giriniz"><?php echo $row['competence'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Modül (gireceğiniz Moduls aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="modul"
-                                   placeholder="Modul giriniz"><?php echo $row['modul'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Features (gireceğiniz Features aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="features"
-                                   placeholder="Features giriniz"><?php echo $row['features'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Infrastructure (gireceğiniz Infrastructures aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="infrastructure"
-                                   placeholder="Infrastructures giriniz"><?php echo $row['infrastructure'] ?></textarea>
                     </div>
                 </div>
 
@@ -158,15 +109,6 @@ if ($_GET['id']) {
 
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Solution Detay Başlık</label>
-                        <input type="text" class="form-control form-control-lg" name="detailTitleE"
-                               value="<?php echo $row['detailTitleE'] ?>"
-                               placeholder="Solution Detay Başlık Giriniz...">
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
                         <label>Solution Alt Açıklama</label>
                         <input type="text" class="form-control form-control-lg" name="subTitleE"
                                value="<?php echo $row['subTitleE'] ?>"
@@ -179,54 +121,6 @@ if ($_GET['id']) {
                         <label>Açıklama Giriniz</label>
                         <textarea type="text" class="form-control form-control-lg" name="descriptionE" id="editor2"
                                   placeholder="Açıklama"><?php echo $row['descriptionE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Skill (gireceğiniz yetkinlikler aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="skillE"
-                                   placeholder="Skill giriniz"><?php echo $row['skillE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Skill (gireceğiniz Özellikler aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="skillE"
-                                   placeholder="Skill giriniz"><?php echo $row['skillE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Yetkinlik (gireceğiniz yetkinlikler aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="competenceE"
-                                   placeholder="Yetkinlik giriniz"><?php echo $row['competenceE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Modül (gireceğiniz Moduls aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="modulE"
-                                   placeholder="Modul giriniz"><?php echo $row['modulE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Features (gireceğiniz Features aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="featuresE"
-                                   placeholder="Features giriniz"><?php echo $row['featuresE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Infrastructure (gireceğiniz Infrastructures aralarında ; koyunuz)</label>
-                        <textarea  type="text" class="form-control form-control-lg" name="infrastructureE"
-                                   placeholder="Infrastructures giriniz"><?php echo $row['infrastructureE'] ?></textarea>
                     </div>
                 </div>
 
