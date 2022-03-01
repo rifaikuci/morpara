@@ -9,8 +9,7 @@ $values = $db->query($sqlvalues);
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2><?php echo $lang == "tr" ? $valuespage['title'] : $valuespage['titleE'] ?></h2>
-            <p><?php echo $lang == "tr" ? $valuespage['subTitle'] : $valuespage['subTitleE'] ?></p>
+            <p><?php echo $lang == "tr" ? $valuespage['title'] : $valuespage['titleE'] ?></p>
         </header>
 
         <div class="row">

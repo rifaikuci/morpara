@@ -1,11 +1,14 @@
 <section id="about" class="about">
     <div class="container" data-aos="fade-up">
+        <header class="section-header">
+            <p><?php echo $lang == "tr" ? $about['title'] : $about['titleE']?></p>
+        </header>
+
         <div class="row gx-0">
 
             <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="content">
-                    <h3><?php echo $lang == "tr" ? $about['title'] : $about['titleE']?></h3>
-                    <h2><?php echo $lang == "tr" ? $about['subTitle'] : $about['subTitleE']?></h2>
+                    <h3><?php echo $lang == "tr" ? $about['subTitle'] : $about['subTitleE']?></h3>
                     <?php echo $lang == "tr" ? kelimeAyirma($about['description'], 25) : kelimeAyirma($about['descriptionE'],25)?>
                     <div class="text-center text-lg-start">
                         <a href="#"

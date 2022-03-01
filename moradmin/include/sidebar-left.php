@@ -146,7 +146,35 @@
                         <p>
                             Değerlerimiz (Ana Sayfa)
                         </p>
-                    </a
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?php echo base_url() . 'smedya' ?>" class="nav-link">
+                        <i class="nav-icon fas fa-share-alt"></i>
+                        <p>
+                            Sosyal Medyalar
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?php echo base_url() . 'sss' ?>" class="nav-link">
+                        <i class="nav-icon fas fa-question"></i>
+                        <p>
+                            S.S.S.
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?php echo base_url() . 'news' ?>" class="nav-link">
+                        <i class="nav-icon fas fa-street-view"></i>
+                        <p>
+                           Haberler
+                        </p>
+                    </a>
+                </li>
 
 
                 <li class="nav-item">

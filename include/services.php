@@ -10,8 +10,7 @@ $services = $db->query($sqlservice);
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2><?php echo $lang == "tr" ? $servicepage['title'] : $servicepage['titleE'] ?></h2>
-            <p><?php echo $lang == "tr" ? $servicepage['subTitle'] : $servicepage['subTitleE'] ?></p>
+            <p><?php echo $lang == "tr" ? $servicepage['title'] : $servicepage['titleE'] ?></p>
         </header>
 
         <div class="row gy-4">

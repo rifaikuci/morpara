@@ -8,8 +8,7 @@ $items = $db->query($sqlfeatures);
 
 
         <header class="section-header">
-            <h2>Features</h2>
-            <p>Laboriosam et omnis fuga quis dolor direda fara</p>
+            <p><?php echo $lang == "tr" ? $feature['title'] : $feature['titleE'] ?></p>
         </header>
 
         <div class="row">
