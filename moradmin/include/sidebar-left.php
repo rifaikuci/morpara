@@ -69,14 +69,6 @@
                     </a>
                 </li>
 
-
-                <li class="nav-item">
-                    <a href="<?php echo base_url_front() ?>" class="nav-link">
-                        <i class="nav-icon far fa-circle text-info"></i>
-                        <p>Giriş Yap</p>
-                    </a>
-                </li>
-
                 <li class="nav-item">
                     <a href="<?php echo base_url() . 'feature' ?>" class="nav-link">
                         <i class="nav-icon fas fa-skiing"></i>
@@ -175,6 +167,34 @@
                         </p>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="<?php echo base_url() . 'testimonials' ?>" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                           Sizden Gelenler
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?php echo base_url() . 'clients' ?>" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                            Referanslarımız
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="<?php echo base_url() . 'posts' ?>" class="nav-link">
+                        <i class="nav-icon fas fa-newspaper"></i>
+                        <p>
+                            Duyurular
+                        </p>
+                    </a>
+                </li>
+
 
 
                 <li class="nav-item">

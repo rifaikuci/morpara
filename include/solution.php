@@ -4,7 +4,6 @@ $solutions = $db->query($sqlsolution);
 
 ?>
 
-
 <div class="row feature-icons" data-aos="fade-up">
     <h3><?php echo $lang == "tr" ? $solutionpage['title'] : $solutionpage['titleE'] ?> </h3>
 

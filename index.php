@@ -55,7 +55,6 @@ $page = "Home";
     <?php include "include/faq.php" ?>
     <?php include "include/gallery.php" ?>
     <?php include "include/testimonials.php" ?>
-    <?php include "include/team.php" ?>
     <?php include "include/clients.php" ?>
     <?php include "include/posts.php" ?>
     <?php include "include/contact.php" ?>

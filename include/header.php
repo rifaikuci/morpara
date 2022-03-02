@@ -1,13 +1,14 @@
 <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a href="<?php echo base_url_front()?>" class="logo d-flex align-items-center">
-            <img src="<?php echo base_url().$logo?>" alt="<?php echo $genel['title']?>">
-            <span><?php echo $lang == "tr" ?  $genel['title'] : $genel['titleE']?></span>
+        <a href="<?php echo base_url_front() ?>" class="logo d-flex align-items-center">
+            <img src="<?php echo base_url() . $logo ?>" alt="<?php echo $genel['title'] ?>">
+            <span><?php echo $lang == "tr" ? $genel['title'] : $genel['titleE'] ?></span>
         </a>
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto <?php echo $page == "Home" ? "active" : ""?>" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto <?php echo $page == "Home" ? "active" : "" ?>" href="#hero">Home</a>
+                </li>
                 <li><a class="nav-link scrollto" href="#about">About</a></li>
                 <li><a class="nav-link scrollto" href="#services">Services</a></li>
                 <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
