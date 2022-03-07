@@ -2,19 +2,17 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <a href="<?php echo base_url_front() ?>" class="logo d-flex align-items-center">
             <img src="<?php echo base_url() . $logo ?>" alt="<?php echo $genel['title'] ?>">
-            <span><?php echo $lang == "tr" ? $genel['title'] : $genel['titleE'] ?></span>
         </a>
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto <?php echo $page == "Home" ? "active" : "" ?>" href="#hero">Home</a>
+                <li><a class="nav-link scrollto <?php echo $page == "Home" ? "active" : "" ?>" href="<?php echo base_url_front()?>"><?php echo $lang == "tr" ? "Ana Sayfa" : "Home"  ;?></a>
                 </li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto <?php echo $page == "About" ? "active" : "" ?>" href="<?php echo base_url_front(). "about"?>"><?php echo $lang == "tr" ? "Hakkımızda" : "About Us"  ;?></a></li>
+                <li><a class="nav-link scrollto <?php echo $page == "Services" ? "active" : "" ?>" href="<?php echo base_url_front(). "services"?>"><?php echo $lang == "tr" ? "Hizmetlerimiz" : "Services"  ;?></a></li>
+                <li><a class="nav-link scrollto <?php echo $page == "News" ? "active" : "" ?>" href="<?php echo base_url_front(). "news"?>"><?php echo $lang == "tr" ? "Haberler" : "News"  ;?></a></li>
+                <li><a class="nav-link scrollto <?php echo $page == "Posts" ? "active" : "" ?>" href="<?php echo base_url_front(). "posts"?>"><?php echo $lang == "tr" ? "Duyurular" : "Announcements"  ;?></a></li>
+                <li><a class="nav-link scrollto <?php echo $page == "Contact" ? "active" : "" ?>" href="<?php echo base_url_front(). "contact"?>"><?php echo $lang == "tr" ? "İletişim" : "Contact"  ;?></a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

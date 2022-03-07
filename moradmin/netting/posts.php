@@ -16,8 +16,8 @@ if (isset($_POST['postsekleme'])) {
     $keywordsE = $_POST['keywordsE'] != "" ? $_POST['keywordsE'] : $_POST['keywords'];
     $seoTitle = seo($title);
     $seoTitleE = seo($titleE);
-    $link = "#"; //base_url_front()."posts-detail/?modul=".$seoTitle;
-    $linkE = "#"; //base_url_front()."posts-detail/?modul=".$seoTitleE;
+    $link = base_url_front()."detail-post/?seo=".$seoTitle;
+    $linkE = base_url_front()."detail-post/?seo=".$seoTitleE;
 
     if ($_FILES['img']['size'] > 0) {
 
@@ -67,8 +67,8 @@ if (isset($_POST['postsguncelleme'])) {
     $keywordsE = $_POST['keywordsE'] != "" ? $_POST['keywordsE'] : $_POST['keywords'];
     $seoTitle = seo($title);
     $seoTitleE = seo($titleE);
-    $link = "#"; //base_url_front()."posts-detail/?modul=".$seoTitle;
-    $linkE = "#"; //base_url_front()."posts-detail/?modul=".$seoTitleE;
+    $link = base_url_front()."detail-post/?seo=".$seoTitle;
+    $linkE = base_url_front()."detail-post/?seo=".$seoTitleE;
 
     if ($_FILES['img']['size'] > 0) {
         $resimbul = tablogetir("tblposts", 'id', $id, $db)['img'];

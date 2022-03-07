@@ -1,5 +1,5 @@
 <?php
-$sqlservice = "SELECT * FROM tblservice order by id asc ";
+$sqlservice = "SELECT * FROM tblservice order by id asc LIMIT 3 ";
 $services = $db->query($sqlservice);
 
 ?>

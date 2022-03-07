@@ -25,10 +25,10 @@ $page = "Home";
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang?>">
 
 <head>
-    <title><?php echo $lang == "tr" ? $ayar['title'] . " Ana Sayfa" : $ayar['titleE'] . " Home"; ?></title>
+    <title><?php echo $lang == "tr" ? $ayar['title'] . " |  Ana Sayfa" : $ayar['titleE'] . " | Home"; ?></title>
     <meta content="<?php echo $metaDescription ?>" name="description">
     <meta content="<?php echo $keywords ?>" name="keywords">
 
@@ -53,13 +53,20 @@ $page = "Home";
 
     <?php include "include/services.php" ?>
     <?php include "include/faq.php" ?>
-    <?php include "include/gallery.php" ?>
+    <?php include "include/news.php" ?>
     <?php include "include/testimonials.php" ?>
-    <?php include "include/clients.php" ?>
     <?php include "include/posts.php" ?>
     <?php include "include/contact.php" ?>
+    <?php include "include/clients.php" ?>
+
 </main>
-<?php include "include/footer.php" ?>
+<footer id="footer" class="footer">
+    <?php include "include/map.php" ?>
+    <?php include "include/newsletter.php" ?>
+    <?php include "include/footer.php" ?>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 <?php include "include/script.php" ?>
 </body>
 

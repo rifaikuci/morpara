@@ -17,8 +17,6 @@ if (isset($_POST['aboutguncelleme'])) {
     $missionE = $_POST['missionE'] != "" ? $_POST['missionE'] : $_POST['mission'];
     $vission = $_POST['vission'];
     $vissionE = $_POST['vissionE'] != "" ? $_POST['vissionE'] : $_POST['vission'];
-    $mainDescription = $_POST['mainDescription'];
-    $mainDescriptionE = $_POST['mainDescriptionE'] != "" ? $_POST['mainDescriptionE'] : $_POST['mainDescription'];
     $skill = $_POST['skill'];
     $skillE = $_POST['skillE'] != "" ? $_POST['skillE'] : $_POST['skill'];
     $metaDescription = $_POST['metaDescription'];
@@ -49,8 +47,6 @@ if (isset($_POST['aboutguncelleme'])) {
         missionE = '$missionE',
         vission = '$vission',
         vissionE = '$vissionE',
-        mainDescription = '$mainDescription',
-        mainDescriptionE = '$mainDescriptionE',
         skill = '$skill',
         skillE = '$skillE',
         keywords = '$keywords',
@@ -77,8 +73,6 @@ if (isset($_POST['aboutguncelleme'])) {
         missionE = '$missionE',
         vission = '$vission',
         vissionE = '$vissionE',
-        mainDescription = '$mainDescription',
-        mainDescriptionE = '$mainDescriptionE',
         skill = '$skill',
         skillE = '$skillE',
         keywords = '$keywords',
@@ -92,6 +86,7 @@ if (isset($_POST['aboutguncelleme'])) {
         WHERE id= '1'";
 
     }
+
 
     if (mysqli_query($db, $sql)) {
         header("Location:../about/?durumguncelleme=ok");

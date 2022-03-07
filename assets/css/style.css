@@ -71,7 +71,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: purple;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -99,6 +99,7 @@ section {
 }
 .breadcrumbs ol a:hover {
   text-decoration: underline;
+  color: #0a001f;
 }
 .breadcrumbs ol li + li {
   padding-left: 10px;
@@ -244,6 +245,7 @@ section {
 }
 .navbar .dropdown ul li {
   min-width: 200px;
+  color: #fff;
 }
 .navbar .dropdown ul a {
   padding: 10px 20px;

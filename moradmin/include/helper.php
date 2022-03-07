@@ -64,7 +64,7 @@ function imageUpload($image, $path)
         } else {
             $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
             $img_ex_lc = strtolower($img_ex);
-            $allowed_exs = array("jpg", "jpeg", "png", "svg");
+            $allowed_exs = array("jpg", "jpeg", "png", "svg", 'ico');
 
             if (in_array($img_ex_lc, $allowed_exs)) {
                 $new_img_name = uniqid() . '.' . $img_ex_lc;

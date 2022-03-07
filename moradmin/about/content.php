@@ -86,7 +86,7 @@ if ($_GET['durumekle'] == "ok") {
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label>Misyon Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="mission"
+                        <textarea type="text" class="form-control form-control-lg" name="mission" id="editor2"
                                   placeholder="Misyon"><?php echo $row['mission'] ?></textarea>
                     </div>
                 </div>
@@ -94,16 +94,8 @@ if ($_GET['durumekle'] == "ok") {
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label>Vizyon Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="vission"
+                        <textarea type="text" class="form-control form-control-lg" name="vission" id="editor3"
                                   placeholder="Vizyon"><?php echo $row['vission'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Ana Açıklama Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="mainDescription" id="editor3"
-                                  placeholder="Ana Açıklama Giriniz"><?php echo $row['mainDescription'] ?></textarea>
                     </div>
                 </div>
 
@@ -127,7 +119,7 @@ if ($_GET['durumekle'] == "ok") {
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label>Description(Seo) Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="metaDescription" id="editor4"
+                        <textarea type="text" class="form-control form-control-lg" name="metaDescription"
                                   placeholder="Description Girilecek seo için"><?php echo $row['metaDescription'] ?></textarea>
                     </div>
                 </div>
@@ -180,7 +172,7 @@ if ($_GET['durumekle'] == "ok") {
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label>Açıklama Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="descriptionE" id="editor2"
+                        <textarea type="text" class="form-control form-control-lg" name="descriptionE" id="editor4"
                                   placeholder="Açıklama"><?php echo $row['descriptionE'] ?></textarea>
                     </div>
                 </div>
@@ -196,7 +188,7 @@ if ($_GET['durumekle'] == "ok") {
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label>Misyon Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="missionE"
+                        <textarea type="text" class="form-control form-control-lg" name="missionE" id="editor5"
                                   placeholder="Misyon"><?php echo $row['missionE'] ?></textarea>
                     </div>
                 </div>
@@ -204,16 +196,8 @@ if ($_GET['durumekle'] == "ok") {
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label>Vizyon Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="vissionE"
+                        <textarea type="text" class="form-control form-control-lg" name="vissionE" id="editor6"
                                   placeholder="Vizyon"><?php echo $row['vissionE'] ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label>Ana Açıklama Giriniz</label>
-                        <textarea type="text" class="form-control form-control-lg" name="mainDescriptionE"
-                                  placeholder="Ana Açıklama Giriniz"><?php echo $row['mainDescriptionE'] ?></textarea>
                     </div>
                 </div>
 
