@@ -38,11 +38,12 @@ $services = $db->query($sqlservice);
                         <div class="service-box purple">
                             <i class="ri-discuss-line icon"></i>
                             <h3><?php echo $lang == "tr" ? $service['title'] : $service['titleE'] ?></h3>
-                            <?php echo $lang == "tr" ? kelimeAyirma($service['description'], 15) : kelimeAyirma($service['descriptionE'], 15) ?>
+                            <?php echo $lang == "tr" ? kelimeAyirma($service['description'], 30) : kelimeAyirma($service['descriptionE'], 30) ?>
                             <br>
-                            <a href="#"
-                               class="read-more"><span><?php echo $lang == "tr" ? "Daha Fazlası için" : "Read More" ?></span>
-                                <i class="bi bi-arrow-right"></i></a>
+                            <!--
+                           <a href="#"
+                              class="read-more"><span>Read More</span>
+                               <i class="bi bi-arrow-right"></i></a> !-->
                         </div>
                     </div>
                     <?php $sira = $sira + 100;

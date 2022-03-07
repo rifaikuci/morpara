@@ -19,9 +19,10 @@ $services = $db->query($sqlservice);
                         <h3><?php echo $lang == "tr" ? $service['title'] : $service['titleE'] ?></h3>
                         <?php echo $lang == "tr" ? kelimeAyirma($service['description'], 15) : kelimeAyirma($service['descriptionE'], 15) ?>
                         <br>
+                        <!--
                         <a href="#"
-                           class="read-more"><span><?php echo $lang == "tr" ? "Daha Fazlası için" : "Read More" ?></span>
-                            <i class="bi bi-arrow-right"></i></a>
+                           class="read-more"><span>Read More</span>
+                            <i class="bi bi-arrow-right"></i></a> !-->
                     </div>
                 </div>
                 <?php $sira = $sira + 100;
