@@ -1,5 +1,5 @@
 <?php
-$sqlposts = "SELECT * FROM tblposts order by id asc ";
+$sqlposts = "SELECT * FROM tblposts order by id desc LIMIT 3 ";
 $posts = $db->query($sqlposts);
 
 ?>

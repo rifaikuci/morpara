@@ -1,5 +1,5 @@
 <?php
-$sqlsolution = "SELECT * FROM tblsolution order by id asc ";
+$sqlsolution = "SELECT * FROM tblsolution order by id DESC ";
 $solutions = $db->query($sqlsolution);
 
 ?>

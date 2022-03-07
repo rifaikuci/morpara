@@ -1,5 +1,5 @@
 <?php
-$sqlclients = "SELECT * FROM tblclients order by id asc ";
+$sqlclients = "SELECT * FROM tblclients order by id desc ";
 $clientss = $db->query($sqlclients);
 
 ?>

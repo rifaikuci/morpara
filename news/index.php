@@ -11,7 +11,7 @@ $servicepage = tablogetir("tblservicepage", "id", 1, $db);
 $keywords = $lang == "tr" ? $genel['keywords'] : $genel['keywordsE'];
 $metaDescription = $lang == "tr" ? $genel['metaDescription'] : $genel['metaDescription'];
 $logo = $genel['img'];
-$page = "Posts";
+$page = "News";
 
 
 ?>

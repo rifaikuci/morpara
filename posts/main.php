@@ -76,7 +76,7 @@ $solutions = $db->query($sqlsolution);
                             <ul>
                                 <?php while ($service = $services->fetch_array()) { ?>
                                     <li>
-                                        <a href="<?php echo $lang == "tr" ? $service['link'] : $service['linkE'] ?>"><?php echo $lang == "tr" ? $service['title'] : $service['titleE'] ?></a>
+                                        <a href="<?php echo $lang == "tr" ? $service['link'] : $service['linkE'] ?>"><?php echo $lang == "tr" ? $service['tiStle'] : $service['titleE'] ?></a>
                                     </li>
 
                                     <hr>

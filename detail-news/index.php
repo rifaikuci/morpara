@@ -43,6 +43,8 @@ $page = "News";
 
 <?php include "../include/header.php" ?>
 <?php include "main.php" ?>
+<?php include "../include/news.php" ?>
+
 
 
 
