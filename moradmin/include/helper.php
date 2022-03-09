@@ -6,12 +6,12 @@ ini_set('display_errors', 1);
 
 function base_url()
 {
-    return "https://morpara.com/moradmin/";
+    return "http://localhost/morpara/moradmin/";
 }
 
 function base_url_front()
 {
-    return "https://morpara.com/";
+    return "http://localhost/morpara/";
 }
 
 function base_title()

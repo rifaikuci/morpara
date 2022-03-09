@@ -31,7 +31,6 @@ $page = "Posts";
 
 <?php include "../include/header.php" ?>
 <?php include "main.php" ?>
-<?php include "../include/posts.php" ?>
 
 
 <footer id="footer" class="footer">

@@ -46,7 +46,7 @@ $page = "Home";
 
     <section id="features" class="features">
         <div class="container" data-aos="fade-up">
-            <?php // include "include/features.php" ?>
+            <?php  include "include/features.php" ?>
             <?php include "include/solution.php" ?>
         </div>
     </section>

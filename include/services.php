@@ -8,7 +8,10 @@ $services = $db->query($sqlservice);
 
     <div class="container" data-aos="fade-up">
         <header class="section-header">
+            <a href="<?php echo base_url_front() . "services" ?>">
+
             <p><?php echo $lang == "tr" ? $servicepage['title'] : $servicepage['titleE'] ?></p>
+            </a>
         </header>
         <div class="row gy-4">
             <?php while ($service = $services->fetch_array()) {

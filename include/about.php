@@ -9,7 +9,7 @@
             <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="content">
                     <h3><?php echo $lang == "tr" ? $about['subTitle'] : $about['subTitleE'] ?></h3>
-                    <?php echo $lang == "tr" ? kelimeAyirma($about['description'], 25) : kelimeAyirma($about['descriptionE'], 25) ?>
+                    <?php echo $lang == "tr" ? kelimeAyirma($about['description'], 50) : kelimeAyirma($about['descriptionE'], 25) ?>
                     <div class="text-center text-lg-start">
                         <a href="<?php echo base_url_front()."about"?>"
                            class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">

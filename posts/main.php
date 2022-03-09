@@ -1,16 +1,12 @@
 <?php
+$sqlposts = "SELECT * FROM tblposts order by id desc  LIMIT 5";
+$postss = $db->query($sqlposts);
 
+$sqlfeatures = "SELECT * FROM tblfeatures order by id";
+$features = $db->query($sqlfeatures);
 
-$sqlpostss = "SELECT * FROM tblposts order by id desc";
-$postss = $db->query($sqlpostss);
+$featurePage = tablogetir("tblfeature", "id", 1, $db);
 
-
-$sqlservice = "SELECT * FROM tblservice order by id asc  LIMIT 5";
-$services = $db->query($sqlservice);
-
-
-$sqlsolution = "SELECT * FROM tblsolution order by id asc  LIMIT 5";
-$solutions = $db->query($sqlsolution);
 ?>
 
 <main id="main">
@@ -46,7 +42,6 @@ $solutions = $db->query($sqlsolution);
 
                             <div class="entry-meta">
                                 <ul>
-
                                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i>
                                         <time datetime="<?php echo tarih($posts['date']) ?>"><?php echo tarih($posts['date']) ?></time>
                                     </li>
@@ -54,7 +49,7 @@ $solutions = $db->query($sqlsolution);
                             </div>
 
                             <div class="entry-content">
-                                <?php echo $lang == "tr" ? kelimeAyirma( $posts['description'], 20 ) : kelimeAyirma( $posts['descriptionE'], 20) ?>
+                                <?php echo $lang == "tr" ? kelimeAyirma($posts['description'], 20) : kelimeAyirma($posts['descriptionE'], 20) ?>
                                 <div class="read-more">
                                     <a href="<?php echo $lang == "tr" ? $posts['link'] : $posts['linkE'] ?>">
                                         <?php echo $lang == "tr" ? "Daha Fazlası için" : "Read More" ?>
@@ -71,41 +66,19 @@ $solutions = $db->query($sqlsolution);
 
                     <div class="sidebar">
 
-                        <h3 class="sidebar-title"><?php echo $lang == "tr" ? "Servislerimiz" : "Services" ?></h3>
+                        <h3 class="sidebar-title"><?php echo $lang == "tr" ? $featurePage['title'] : $featurePage['titleE'] ?></h3>
                         <div class="sidebar-item categories">
                             <ul>
-                                <?php while ($service = $services->fetch_array()) { ?>
+                                <?php while ($feature = $features->fetch_array()) { ?>
                                     <li>
-                                        <a href="<?php echo $lang == "tr" ? $service['link'] : $service['linkE'] ?>"><?php echo $lang == "tr" ? $service['tiStle'] : $service['titleE'] ?></a>
+                                        <?php echo $lang == "tr" ? $feature['title'] : $feature['titleE'] ?>
                                     </li>
-
                                     <hr>
                                 <?php } ?>
                             </ul>
                         </div>
-
                     </div>
-
-                    <div class="sidebar">
-
-                        <h3 class="sidebar-title"><?php echo $lang == "tr" ? "Çözümlerimiz" : "Solutions" ?></h3>
-                        <div class="sidebar-item categories">
-                            <ul>
-                                <?php while ($solution = $solutions->fetch_array()) { ?>
-                                    <li>
-                                        <a href="<?php echo $lang == "tr" ? $solution['link'] : $solution['linkE'] ?>"><?php echo $lang == "tr" ? $solution['title'] : $solution['titleE'] ?></a>
-                                    </li>
-
-                                    <hr>
-                                <?php } ?>
-                            </ul>
-                        </div>
-
-                    </div>
-
                 </div>
-
             </div>
-
         </div>
     </section>

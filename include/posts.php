@@ -9,7 +9,9 @@ $posts = $db->query($sqlposts);
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
+            <a href="<?php echo base_url_front() . "news" ?>">
             <p><?php echo $lang == "tr" ? "Duyurular" : "Announcements" ?></p>
+            </a>
         </header>
         <div class="row">
             <?php while ($post = $posts->fetch_array()) { ?>

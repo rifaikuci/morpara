@@ -5,8 +5,10 @@ $newss = $db->query($sqlnewss);
 $sqlposts = "SELECT * FROM tblposts order by id desc  LIMIT 5";
 $postss = $db->query($sqlposts);
 
-$sqlfeatures = "SELECT * FROM tblfeatures order by id desc  LIMIT 5";
+$sqlfeatures = "SELECT * FROM tblfeatures order by id";
 $features = $db->query($sqlfeatures);
+
+$featurePage = tablogetir("tblfeature", "id", 1, $db);
 
 ?>
 
@@ -43,7 +45,6 @@ $features = $db->query($sqlfeatures);
 
                             <div class="entry-meta">
                                 <ul>
-
                                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i>
                                         <time datetime="<?php echo tarih($news['date']) ?>"><?php echo tarih($news['date']) ?></time>
                                     </li>
@@ -51,7 +52,7 @@ $features = $db->query($sqlfeatures);
                             </div>
 
                             <div class="entry-content">
-                                <?php echo $lang == "tr" ? kelimeAyirma( $news['description'], 20 ) : kelimeAyirma( $news['descriptionE'], 20) ?>
+                                <?php echo $lang == "tr" ? kelimeAyirma($news['description'], 20) : kelimeAyirma($news['descriptionE'], 20) ?>
                                 <div class="read-more">
                                     <a href="<?php echo $lang == "tr" ? $news['link'] : $news['linkE'] ?>">
                                         <?php echo $lang == "tr" ? "Daha Fazlası için" : "Read More" ?>
@@ -68,41 +69,19 @@ $features = $db->query($sqlfeatures);
 
                     <div class="sidebar">
 
-                        <h3 class="sidebar-title"><?php echo $lang == "tr" ? "Son Duyurular" : "Announcements" ?></h3>
-                        <div class="sidebar-item categories">
-                            <ul>
-                                <?php while ($posts = $postss->fetch_array()) { ?>
-                                    <li>
-                                        <a href="<?php echo $lang == "tr" ? $posts['link'] : $posts['linkE'] ?>"><?php echo $lang == "tr" ? $posts['title'] : $posts['titleE'] ?></a>
-                                    </li>
-
-                                    <hr>
-                                <?php } ?>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <div class="sidebar">
-
-                        <h3 class="sidebar-title"><?php echo $lang == "tr" ? "Özellikler" : "Features" ?></h3>
+                        <h3 class="sidebar-title"><?php echo $lang == "tr" ? $featurePage['title'] : $featurePage['titleE'] ?></h3>
                         <div class="sidebar-item categories">
                             <ul>
                                 <?php while ($feature = $features->fetch_array()) { ?>
                                     <li>
-                                        <a href="#"><?php echo $lang == "tr" ? $feature['title'] : $feature['titleE'] ?></a>
+                                        <?php echo $lang == "tr" ? $feature['title'] : $feature['titleE'] ?>
                                     </li>
-
                                     <hr>
                                 <?php } ?>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </section>

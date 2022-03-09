@@ -1,5 +1,5 @@
 <?php
-$sqlfeatures = "SELECT * FROM tblfeatures order by id desc ";
+$sqlfeatures = "SELECT * FROM tblfeatures order by id desc LIMIT 8 ";
 $items = $db->query($sqlfeatures);
 
 ?>

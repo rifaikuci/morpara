@@ -38,7 +38,7 @@ $services = $db->query($sqlservice);
                         <div class="service-box purple">
                             <i class="<?php echo $service['class'] .  "   icon"?>"></i>
                             <h3><?php echo $lang == "tr" ? $service['title'] : $service['titleE'] ?></h3>
-                            <?php echo $lang == "tr" ? kelimeAyirma($service['description'], 30) : kelimeAyirma($service['descriptionE'], 30) ?>
+                            <?php echo $lang == "tr" ? $service['description'] : $service['descriptionE'] ?>
                             <br>
                             <!--
                            <a href="#"
