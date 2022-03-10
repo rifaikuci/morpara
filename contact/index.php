@@ -31,7 +31,7 @@ $page = "Contact";
 
 <?php include "../include/header.php" ?>
 <?php include "../include/values.php" ?>
-<?php include "../include/contact.php" ?>
+<?php // include "../include/contact.php" ?>
 <?php include "../include/map.php" ?>
 
 

@@ -42,6 +42,7 @@
 
             </div>
 
+            <!--
             <div class="col-lg-6">
                 <form action="#" method="post" class="php-email-form">
                     <div class="row gy-4">
@@ -76,6 +77,7 @@
                     </div>
                 </form>
             </div>
+            -->
         </div>
 
     </div>

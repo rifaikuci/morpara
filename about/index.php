@@ -33,7 +33,7 @@ $page = "About";
 <?php include "../include/header.php" ?>
 <?php include "main.php" ?>
 
-<?php include "../include/clients.php" ?>
+<?php // include "../include/clients.php" ?>
 <footer id="footer" class="footer">
     <?php include "../include/map.php" ?>
     <?php include "../include/newsletter.php" ?>

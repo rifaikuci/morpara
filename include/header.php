@@ -11,9 +11,7 @@
                 <li><a class="nav-link scrollto <?php echo $page == "About" ? "active" : "" ?>" href="<?php echo base_url_front(). "about"?>"><?php echo $lang == "tr" ? "Hakkımızda" : "About Us"  ;?></a></li>
                 <li><a class="nav-link scrollto <?php echo $page == "Services" ? "active" : "" ?>" href="<?php echo base_url_front(). "services"?>"><?php echo $lang == "tr" ? "Hizmetlerimiz" : "Services"  ;?></a></li>
                 <li><a class="nav-link scrollto <?php echo $page == "News" ? "active" : "" ?>" href="<?php echo base_url_front(). "news"?>"><?php echo $lang == "tr" ? "Haberler" : "News"  ;?></a></li>
-                <li><a class="nav-link scrollto <?php echo $page == "Posts" ? "active" : "" ?>" href="<?php echo base_url_front(). "posts"?>"><?php echo $lang == "tr" ? "Duyurular" : "Announcements"  ;?></a></li>
                 <li><a class="nav-link scrollto <?php echo $page == "Contact" ? "active" : "" ?>" href="<?php echo base_url_front(). "contact"?>"><?php echo $lang == "tr" ? "İletişim" : "Contact"  ;?></a></li>
-
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
